@@ -98,7 +98,7 @@ class Game(object):
     b1 = self.rocket.shape.body
     b2 = self.planet.shape.body
     d = b1.position - b2.position
-    return [d, b1.velocity, b1.angle, b1.angular_velocity]
+    return [d, b1.angle]
 
   def apply_action(self, action):
     angle = self.rocket.shape.body.angle
